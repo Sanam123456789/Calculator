@@ -1,0 +1,49 @@
+/* Styling Calculator..........  */
+        .calculator{
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 40%;
+            height: 500px;
+            width: 350px;
+            background-color:rgb(77, 87, 97);
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .display{
+            background-color:rgb(180, 213, 224) ;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .buttons{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .buttons button{
+            padding: 20px;
+            font-size: 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+        .buttons button:hover{
+            background-color: #c2c0c0;
+        }
+        .buttons button:nth-of-type(20){
+            background-color: orange;
+        }
+        .buttons button:nth-of-type(20):hover{
+            background-color: #ff8c00;
+        }
+        body{
+            background-color: #c2c0c0;
+        }
