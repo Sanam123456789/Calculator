@@ -9,15 +9,22 @@
             border-radius: 20px;
             padding: 10px;
         }
-        .display{
+        #display{
             background-color:rgb(180, 213, 224) ;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 10px;
+            height: 60px;
             border-radius: 20px;
             font-size: 40px;
             margin-top: 10px;
+            width: 100%;
+            border: none;
+            position: relative;
+            right:1.5px;
+        }
+        #display:focus{
+            outline: none;
         }
         .buttons{
             width: 100%;
@@ -36,13 +43,19 @@
             transition: all 0.2s linear;
         }
         .buttons button:hover{
-            background-color: #c2c0c0;
+            background-color: #b8b6b6;
+        }
+        .buttons button:active{
+            background-color:antiquewhite;
         }
         .buttons button:nth-of-type(20){
             background-color: orange;
         }
         .buttons button:nth-of-type(20):hover{
-            background-color: #ff8c00;
+            background-color: orangered;
+        }
+        .buttons button:nth-of-type(20):active{
+            background-color: rgb(194, 137, 117);
         }
         body{
             background-color: #c2c0c0;
